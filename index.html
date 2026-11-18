@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090f1d">
+  <meta name="description" content="SchoolTrack - persoonlijke schoolprikklok">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./src/styles.css">
+  <title>SchoolTrack</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><div class="brand-mark">S</div><div><strong>SchoolTrack</strong><small>Persoonlijke schoolprikklok</small></div></div>
+      <button class="icon-btn" id="themeToggle" aria-label="Thema wisselen">◐</button>
+    </header>
+    <main id="view" class="view" aria-live="polite"></main>
+    <nav class="tabbar" aria-label="Hoofdnavigatie">
+      <button data-tab="dashboard" class="active"><span>⌂</span><small>Home</small></button>
+      <button data-tab="logboek"><span>≡</span><small>Logboek</small></button>
+      <button data-tab="statistieken"><span>▥</span><small>Stats</small></button>
+      <button data-tab="kalender"><span>▦</span><small>Kalender</small></button>
+      <button data-tab="instellingen"><span>⚙</span><small>Instellingen</small></button>
+    </nav>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toast" role="status" class="toast"></div>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>

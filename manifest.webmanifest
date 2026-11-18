@@ -1,0 +1,11 @@
+{
+  "name": "SchoolTrack",
+  "short_name": "SchoolTrack",
+  "description": "Persoonlijke schoolprikklok",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#090f1d",
+  "theme_color": "#090f1d",
+  "icons": []
+}
